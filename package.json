@@ -1,7 +1,7 @@
 {
   "name": "simple-factory",
   "version": "0.0.0",
-  "description": "Create simple factories for classes, useful for mapping data into Objects.",
+  "description": "A factory method to rule them all.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
