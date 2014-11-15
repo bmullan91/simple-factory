@@ -4,7 +4,8 @@
   "description": "A factory method to rule them all.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha",
+    "debug": "node-debug node_modules/.bin/_mocha"
   },
   "keywords": [
     "simple",
@@ -14,5 +15,9 @@
     "mapper"
   ],
   "author": "Brian Mullan <bmullan91@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~2.0.1",
+    "chai": "~1.10.0"
+  }
 }
