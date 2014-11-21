@@ -14,12 +14,6 @@ Via npm, saving it as a dependency.
 
 #Uses
 
-__1.__ Eliminate boilerplate factory code.
-__2.__ Validate arguments before invoking the constructor.
-__2.__ Map items to objects succinctly [](#heading).
-
-#Examples
-
 ####1. Lightweight factories
 
 A common pattern would be along the lines of:
@@ -96,9 +90,9 @@ The glue.
 
 ```js
 var simpleFactory = require('simple-factory');
-var personFactory = simpleFactory(Person);
+
 //mapper
-var people = items.map(personFactory);
+var people = items.map(simpleFactory(Person));
 
 //test
 assert(people.every(function(person) {

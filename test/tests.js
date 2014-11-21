@@ -2,7 +2,7 @@
 var expect = require('chai').expect;
 var simpleFactory = require('../');
 
-//this class we are creating a factory for!
+//reused class we are creating a factory for!
 function Class() {
   this.args = Array.prototype.splice.call(arguments, 0);
 }
@@ -104,6 +104,3 @@ describe('using as a mapper function', function() {
   });
 
 });
-
-
-
