@@ -1,4 +1,3 @@
-
 var expect = require('chai').expect;
 var simpleFactory = require('../');
 
