@@ -1,10 +1,6 @@
-TODO - work in progress.
-
 #simple-factory
 
-###What is it?
-
-Think of it as a factory to create factories.
+A factory to create factories, sounds weird right? But it has it's uses!
 
 #Install
 
@@ -16,7 +12,7 @@ Via npm, saving it as a dependency.
 
 ####1. Lightweight factories
 
-A common pattern would be along the lines of:
+A common pattern would go along the lines of:
 
 ```js
 //Thing.js
@@ -28,7 +24,6 @@ function Thing(stuff) {
 module.exports = function factory(stuff) {
   return new Thing(stuff);
 };
-
 ```
 
 This and many cases like it can be shortened to:
