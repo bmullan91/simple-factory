@@ -1,6 +1,6 @@
 {
   "name": "simple-factory",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A factory method to rule them all.",
   "main": "index.js",
   "scripts": {

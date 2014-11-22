@@ -10,6 +10,10 @@ Via npm, saving it as a dependency.
 
     npm i simple-factory --save
 
+```js
+var simpleFactory = require('simple-factory');
+```
+
 #Uses
 
 ####1. Lightweight factories
@@ -40,7 +44,7 @@ In some senarios you will want to validate the input data before creating the ob
 
 ```js
 function validate(stuff) {
-  return stuff.plentify;
+  return stuff.plentiful;
 }
 
 module.exports = function factory(stuff) {
@@ -87,8 +91,6 @@ The glue.
 
 ```js
 var simpleFactory = require('simple-factory');
-
-//mapper
 var people = items.map(simpleFactory(Person));
 
 //test
