@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bmullan91/simple-factory.svg?branch=master)](https://travis-ci.org/bmullan91/simple-factory) [![Coverage Status](https://img.shields.io/coveralls/bmullan91/simple-factory.svg)](https://coveralls.io/r/bmullan91/simple-factory?branch=master)
+
 #simple-factory
 
 A factory to create factories, sounds weird right? But it has it's uses!
