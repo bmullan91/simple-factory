@@ -38,10 +38,11 @@ This and many cases like it can be shortened to:
 module.exports = simpleFactory(Thing);
 ```
 
-#### 2. Avoid use of the *new* keyword
+#### 2. Avoiding the *new* keyword
 
 Some people don't like using the new keyword in javascript, but there are some cases where it's unavoidable.
 For example, the native **Date** object, without the new keyword it will only return a string. 
+
 Simple-factory can be used to create a date factory:
 
 ```js
