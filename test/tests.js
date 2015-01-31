@@ -22,6 +22,18 @@ describe('validation checks', function() {
 
 });
 
+describe('wraps native objects', function() {
+
+  it('should wrap the Date object', function() {
+    expect(Date() instanceof Date).to.be.false;
+
+    var dateFactory = simpleFactory(Date);
+    expect(dateFactory() instanceof Date).to.be.true;
+    expect(dateFactory.apply(null, [2015, 2, 10]) instanceof Date).to.be.true;
+  });
+
+});
+
 describe('creates expected classes', function() {
   //reused
   var factory = simpleFactory(Class);

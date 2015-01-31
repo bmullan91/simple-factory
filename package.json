@@ -1,7 +1,7 @@
 {
   "name": "simple-factory",
-  "version": "1.0.0",
-  "description": "A factory method to rule them all.",
+  "version": "1.0.1",
+  "description": "One factory method to rule them all.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha",
