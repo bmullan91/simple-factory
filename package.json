@@ -1,7 +1,11 @@
 {
   "name": "simple-factory",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "One factory method to rule them all.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmullan91/simple-factory"
+  },
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha",
@@ -17,6 +21,9 @@
     "mapper"
   ],
   "author": "Brian Mullan <bmullan91@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/bmullan91/simple-factory/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "mocha": "~2.0.1",
