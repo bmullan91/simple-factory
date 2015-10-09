@@ -115,3 +115,18 @@ describe('using as a mapper function', function() {
   });
 
 });
+
+describe('static handling', function() {
+  it('should copy over statics defined on the class constructor', function() {
+    function Person(config) {
+      this.name = config.name;
+      this.age = config.age;
+    }
+    Person.STATIC_PROP = Math.random();
+    Person.STATIC_FUNCTION = function() {};
+
+    var personFactory = simpleFactory(Person);
+    expect(personFactory.STATIC_PROP).to.be.equal(Person.STATIC_PROP);
+    expect(personFactory.STATIC_FUNCTION).to.be.equal(Person.STATIC_FUNCTION);
+  });
+});
