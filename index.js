@@ -7,7 +7,7 @@ module.exports = function(Class, validator) {
     throw new Error('simple-factory takes a function as it\'s second parameter');
   }
 
-  return function() {
+  function factory() {
     var args = Array.prototype.splice.call(arguments, 0);
 
     //pre-bind the arguments of the class to be what was passed
@@ -20,5 +20,13 @@ module.exports = function(Class, validator) {
     } else {
       return new fn();
     }
-  };
+  }
+
+  for (var prop in Class) {
+    if (Class.hasOwnProperty(prop)) {
+      factory[prop] = Class[prop];
+    }
+  }
+
+  return factory;
 };
